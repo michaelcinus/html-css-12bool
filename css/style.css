@@ -1,0 +1,20 @@
+/* general predisposition */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* DEBUG */
+  [ class*="col-"]{
+      height: 150px;
+      border: solid 1px black;
+      background-color: pink;
+      text-align: center;
+      line-height: 150px;
+  }
+
+  .nested{
+     border: solid 1px pink ;
+     background-color: chocolate;
+  }
