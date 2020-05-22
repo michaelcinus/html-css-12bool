@@ -7,14 +7,26 @@
 
   /* DEBUG */
   [ class*="col-"]{
-      height: 150px;
+      height: 100%;
       border: solid 1px black;
-      background-color: pink;
       text-align: center;
       line-height: 150px;
   }
 
-  .nested{
-     border: solid 1px pink ;
+  .container{
+    background-color: pink;
+    height: 150px;
+  }
+
+  .container:last-child{
+      height: 100%;
+  }
+
+  .container:last-child > div{
+      padding: 5px;
+  }
+
+  [ class*="col-"]  .container > [ class*="col-"] {
+     border: solid 1px white ;
      background-color: chocolate;
   }
